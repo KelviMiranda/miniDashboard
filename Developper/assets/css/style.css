@@ -1,0 +1,246 @@
+/* Import font */
+
+
+:root{
+    --color-link:rgb(85, 83, 83);
+    --bg-color:#dfe9f5;
+    --color-hover:#eee;
+    --box-shadow:0 1.4rem 2.3rem rgba(0,0,0,0,.1);
+    --btn-card:orangered;
+    --btn-hover:rgba(223, 70, 15, 0.856);
+    --bg-card:rgb(235,233,233); 
+}   
+
+*{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding:0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .4s linear;
+}
+
+
+body{
+    background-color:var(--bg-color);
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.nav{
+    align-self: stretch;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow:var(--box-shadow);
+}
+
+ .nav__logo{
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.nav__logo span{
+    font-weight: bold;
+    padding-left:1rem;
+    font-size: 1.3rem;
+}
+
+a{
+    position: relative;
+    color: var(--color-link);
+    font-size: .89rem;
+    display: table;
+    width: 280px;
+    padding: .8rem;
+}
+
+
+.nav__link i {
+    position: relative;
+    width: 76px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.nav__link span{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+}
+
+a:hover{
+    background-color: #eee;
+}
+.logout{
+    position: relative;
+    bottom: 0;
+}
+
+/* style section main */
+main{
+    width: 100%;
+    padding: 1.6rem;
+}
+.main{
+    position: relative;
+    width: 98%;
+    margin: auto;
+}
+
+.main__top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} 
+
+.main__top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(11, 109,109);
+    cursor: pointer;
+}
+
+.main__skills{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.main__skills .card{
+    width: 22%;
+    margin: 1rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 1.3rem;
+    padding: 1.3rem 0;
+    box-shadow:var(--box-shadow);
+}
+
+.main__skills h3{
+    margin: 1rem;
+    text-transform: capitalize;
+}
+
+.main__skills p{
+    font-size: 14px;
+}
+
+.main__skills .card button{
+    background: var(--btn-card);
+    color: white;
+    padding: .4rem 1rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.main__skills .card button:hover{
+    background-color: var(--btn-hover);
+}
+
+.main__skills .card i{
+    font-size: 1.8rem;
+    padding: 10px;
+}
+
+/* my courses */
+
+.main-course{
+    margin-top: 1.2rem;
+    text-transform: capitalize;
+        position: relative;
+        width: 98%;
+        margin: auto;
+
+}
+.main-course h2{
+    margin-block: 1rem;
+}
+
+.course-box{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 1.3rem;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.course-box ul{
+    display: flex;
+}
+
+.course-box ul li{
+    margin: 1.2rem;
+    color: grey;
+    cursor: pointer;
+}
+
+.course-box ul .active{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.course-box .course{
+    display: flex;
+}
+
+.box{
+    width: 33%;
+    padding:10px;
+    margin: 10px;
+    border-radius: 10px;
+    background:var(--bg-card);
+    box-shadow: var(--box-shadow);
+}
+
+.box p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.box button {
+    background-color: black;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.box button:hover{
+    background-color: rgba(0,0,0,0.842);
+}
+
+.box i{
+    font-size: 7rem ;
+    float: right;
+    margin:-20px 20px 20px 0;
+}
+
+.course .box:nth-child(1) i{
+    color: rgb(203, 71, 24);
+}
+
+.course .box:nth-child(2) i{
+    color: rgb(32, 103, 190);
+}
+
+.course .box:nth-child(3) i{
+    color: rgb(194, 172, 13);
+}
